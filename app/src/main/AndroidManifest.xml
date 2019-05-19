@@ -11,9 +11,14 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LoginActivity"
+        <activity android:name=".RegisterActivity"
                   android:screenOrientation="portrait"
                   android:theme="@style/AppTheme.NoActionBar.NoAnimation">
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar.NoAnimation">
         </activity>
         <activity
                 android:name=".SplashActivity"
