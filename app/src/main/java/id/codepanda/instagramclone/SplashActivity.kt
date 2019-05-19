@@ -2,11 +2,14 @@ package id.codepanda.instagramclone
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import org.jetbrains.anko.intentFor
+import org.jetbrains.anko.noAnimation
 
-class Auth : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_auth)
+        startActivity(intentFor<AuthActivity>().noAnimation())
+        finish()
     }
 }
