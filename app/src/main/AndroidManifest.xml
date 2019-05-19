@@ -11,9 +11,14 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SplashActivity"
+        <activity android:name=".LoginActivity"
                   android:screenOrientation="portrait"
-                  android:theme="@style/SplashTheme">
+                  android:theme="@style/AppTheme.NoActionBar.NoAnimation">
+        </activity>
+        <activity
+                android:name=".SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -23,7 +28,7 @@
         <activity
                 android:name=".AuthActivity"
                 android:screenOrientation="portrait"
-                android:theme="@style/AppTheme.NoActionBar">
+                android:theme="@style/AppTheme.NoActionBar.NoAnimation">
         </activity>
         <activity
                 android:name=".MainActivity"
