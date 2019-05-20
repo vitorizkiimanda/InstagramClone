@@ -5,11 +5,10 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
-import id.codepanda.instagramclone.mainFragments.HomeFragment
-import id.codepanda.instagramclone.mainFragments.NotificationFragment
-import id.codepanda.instagramclone.mainFragments.ProfileFragment
-import id.codepanda.instagramclone.mainFragments.SearchFragment
-import id.codepanda.instagramclone.util.showNotif
+import id.codepanda.instagramclone.mainfragments.HomeFragment
+import id.codepanda.instagramclone.mainfragments.notifications.NotificationFragment
+import id.codepanda.instagramclone.mainfragments.ProfileFragment
+import id.codepanda.instagramclone.mainfragments.SearchFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +20,8 @@ class MainActivity : AppCompatActivity() {
     lateinit var itemProfile : MenuItem
     private val mHomeFragment: Fragment = HomeFragment()
     private val mSearchFragment: Fragment = SearchFragment()
-    private val mNotificationFragment: Fragment = NotificationFragment()
+    private val mNotificationFragment: Fragment =
+        NotificationFragment()
     private val mProfileFragment: Fragment = ProfileFragment()
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->

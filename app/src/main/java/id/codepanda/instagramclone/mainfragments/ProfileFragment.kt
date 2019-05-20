@@ -1,4 +1,4 @@
-package id.codepanda.instagramclone.mainFragments
+package id.codepanda.instagramclone.mainfragments
 
 
 import android.os.Bundle
@@ -18,14 +18,14 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class SearchFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
 
